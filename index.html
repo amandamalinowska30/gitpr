@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<head>
+   
+  
+</head>
+<body>
+
+<img id="zdj" src="drzewo.jpg" onclick="zmianaobrazu()" alt="zdj2">
+
+<script>
+    function zmianaobrazu() {
+        var zdjecieElement = document.getElementById("zdj");
+
+        if (zdjecieElement.src.endsWith("drzewo.jpg")) {
+            zdjecieElement.src = "kot.jpg";
+        } else {
+            zdjecieElement.src = "drzewo.jpg";
+        }
+    }
+</script>
+
+</body>
+</html>
